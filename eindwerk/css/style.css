@@ -56,11 +56,15 @@ display:grid;
   
 }
 .jumbotron {
+<<<<<<< HEAD
 background:url(../images/stock-jumbotron-d.jpg);
+=======
+background:url("../images/stock-jumbotron-d.jpg");
+>>>>>>> upstream/master
 background-repeat:no-repeat;
 background-size:cover;
 width:100%;
-height:500px;
+height:200px;
 border-bottom:3px solid #292929;
 
 
