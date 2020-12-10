@@ -22,6 +22,7 @@ display:grid;
     color: #c7a464;
     font-family: 'Scheherazade', serif;
     font-size: 1.5rem;
+   
 
 }
 
@@ -55,7 +56,7 @@ display:grid;
   
 }
 .jumbotron {
-background:url(images/stock-jumbotron-d.jpg);
+background:url(../images/stock-jumbotron-d.jpg);
 background-repeat:no-repeat;
 background-size:cover;
 width:100%;
