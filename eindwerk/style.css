@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,800&family=Scheherazade:wght@400;700&display=swap');
+
+
+body{
+    background:#dbc8a6 ;
+
+}
+header{
+
+display:grid;
+
+    background:#292929 ;
+    grid-template-columns: 1fr 4fr 1fr ;
+    gap: 8rem;
+    border-bottom:4px solid #c7a464;
+    box-shadow: 0px 8px 5px 2px rgba(250,233,182,1);
+}
+
+.logo {
+    width: 10%;
+    margin: 5px 15px ;
+    color: #c7a464;
+    font-family: 'Scheherazade', serif;
+    font-size: 1.5rem;
+
+}
+
+
+
+.nav ul{
+    list-style: none;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 40px 0px;
+}
+.nav ul li a{
+    color: #c7a464;
+    text-decoration:none;
+    font-size:20px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.nav{
+    padding-left: 40px;
+    
+}
+
+.boeking-button button{
+    margin: 40px 15px;
+    background:#c7a464;
+    color: #151316;
+    font-size: 20px;
+  
+}
+.jumbotron {
+background:url(images/stock-jumbotron.jpeg);
+background-repeat:no-repeat;
+background-size:cover;
+width:100%;
+height:500px;
+border-bottom:3px solid #292929;
+
+
+}
+p {
+font-family: 'Open Sans', sans-serif;
+}
