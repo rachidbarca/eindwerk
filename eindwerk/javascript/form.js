@@ -39,7 +39,6 @@
         else {
             document.getElementById("mail_error").innerHTML = "";
         }
-    }
 
 
 
