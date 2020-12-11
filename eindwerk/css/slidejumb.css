@@ -3,9 +3,13 @@
   width:600px;
   height:300px;
   margin: 0 auto;
+  border-radius:30px;
   max-width: 940px;
 }
-
+.slider img {
+height:300px;
+width:600px;
+}
 .slide_viewer {
   height: 340px;
   overflow: hidden;
@@ -43,6 +47,9 @@
 
 .slide:nth-of-type(4) {
   background: #D1D1D4;
+}
+.slide:nth-of-type(5) {
+  background: #FFaa00;
 }
 
 .slide_buttons {
