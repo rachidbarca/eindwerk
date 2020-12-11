@@ -63,6 +63,10 @@ border-bottom:3px solid #292929;
 p {
 font-family: 'Open Sans', sans-serif;
 }
+
+/*  content gedeelte   */
+
+
 main{
     display: grid;
    grid-template-columns: 1fr 1fr  1fr 1fr;
@@ -81,12 +85,11 @@ main{
 }
 
 .welnesstekst{
-grid-area: welnesstekst;
+    grid-area: welnesstekst;
 }
 
 
 .welnessfoto{
-    height: 20%;
     grid-area: welnessfoto;
     height: 300px;
     width: 600px;
@@ -97,8 +100,8 @@ grid-area: welnesstekst;
     
 }
 .transportfoto{
-grid-area: transportfoto;
-height: 300px;
+    grid-area: transportfoto;
+    height: 300px;
     width: 600px;
 }
 .recreatiefoto{
