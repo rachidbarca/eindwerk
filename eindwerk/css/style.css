@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,800&family=Scheherazade:wght@400;700&display=swap');
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
-=======
-
-* {
-    box-sizing:border-box;
-}
->>>>>>> upstream/master
 body{
     background:#dbc8a6 ;
 
@@ -42,12 +35,9 @@ header{
     font-family: 'Open Sans', sans-serif;
 
 }
-<<<<<<< HEAD
-=======
 .nav a:hover {
 color:#FFF;
 }
->>>>>>> upstream/master
 .nav{
     padding-left: 40px;
     

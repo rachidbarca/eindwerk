@@ -12,16 +12,7 @@
   position: relative;
 }
 
-<<<<<<< HEAD
-.gallery .item {
-  
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-=======
 .slide_group {
->>>>>>> upstream/master
   height: 100%;
   position: relative;
   width: 100%;
