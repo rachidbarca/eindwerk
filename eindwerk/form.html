@@ -1,3 +1,14 @@
+<style>
+    /*Dit moet in de css komen*/
+    .error {
+        color:#FF0000;
+    }
+    label {
+        display:inline-block;
+        text-align:right;
+        width:200px;
+    }
+</style>
 <form id="formulier">
         <p>
             <label for="voornaam">Voornaam:</label>
@@ -12,19 +23,39 @@
         <p>
            
             <label for="email">Email:</label><input type="text" id="email" />
-            <span class="error" id="email_error"></span>
+            <span class="error" id="mail_error"></span>
         </p>
         <p>
-            <label for="wagen">Volwassenen</label>
+            <label for="volwassenen">Volwassenen:</label>
             <select name="wagen" id="wagen">
                 <option value="">Selecteer</option>
-                <option value="volkswagen">Volkswagen</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="renault">Renault</option>
-                <option value="citroen">Citro&euml;n</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
             </select>
-            <span class="error" id="wagen_error"></span>
+            <span class="error" id="volwassenen_error"></span>
+        </p>
+          <label for="kinderen">Kinderen:</label>
+            <select name="wagen" id="wagen">
+                <option value="">Selecteer</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+            <span class="error" id="kinderen_error"></span>
         </p>
         <p>
-         
+         <button type="button" value="verstuur" id="knop_verstuur" onclick="verstuur()"/>Verstuur</button>
+
+         <script src="javascript/form.js"></script>
     </form>
