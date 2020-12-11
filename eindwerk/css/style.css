@@ -63,6 +63,47 @@ font-family: 'Open Sans', sans-serif;
 }
 main{
     display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-template-rows: 2fr 2fr 2fr auto;
+   grid-template-columns: 1fr 1fr  1fr 1fr;
+   grid-template-rows: minmax(100px,auto) 2fr 2fr 2fr;
+   grid gap: 10px;
+   
+   grid-template-areas:
+   
+   " . welnesstekst welnessfoto . "
+   " . transportfoto transporttekst . "
+   " . recreatietekst recreatiefoto . ";
+          
+   
+   
+   
+}
+
+.welnesstekst{
+grid-area: welnesstekst;
+}
+
+
+.welnessfoto{
+    height: 20%;
+    grid-area: welnessfoto;
+    height: 300px;
+    width: 600px;
+}
+
+.transporttekst{
+    grid-area: transporttekst;
+    
+}
+.transportfoto{
+grid-area: transportfoto;
+height: 300px;
+    width: 600px;
+}
+.recreatiefoto{
+    grid-area: recreatiefoto;
+    height: 300px;
+    width: 600px;
+}
+.recreatietekst{
+    grid-area: recreatietekst;
 }
