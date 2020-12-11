@@ -67,7 +67,7 @@ main{
     display: grid;
    grid-template-columns: 1fr 1fr  1fr 1fr;
    grid-template-rows: minmax(100px,auto) 2fr 2fr 2fr;
-   grid gap: 10px;
+   grid-gap: 20px;
    
    grid-template-areas:
    
