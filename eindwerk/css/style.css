@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,800&family=Scheherazade:wght@400;700&display=swap');
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
-=======
-
-* {
-    box-sizing:border-box;
-}
->>>>>>> upstream/master
 body{
     background:#dbc8a6 ;
 
@@ -42,12 +35,9 @@ header{
     font-family: 'Open Sans', sans-serif;
 
 }
-<<<<<<< HEAD
-=======
 .nav a:hover {
 color:#FFF;
 }
->>>>>>> upstream/master
 .nav{
     padding-left: 40px;
     
@@ -67,36 +57,120 @@ background-size:cover;
 width:100%;
 height:200px;
 border-bottom:3px solid #292929;
+margin-bottom: 4em;
+}
 
 
+/* formulier gedeelte begint hier   */
+
+
+ .error {
+
+    color:#FF0000;
 }
-p {
-font-family: 'Open Sans', sans-serif;
+
+label {
+    display:inline-block;
+    text-align:right;
+    width:200px;
 }
-main{
+
+
+
+/* formulier gedeelte eindigt hier   */
+
+
+
+
+
+
+
+
+
+
+
+
+/*  begin diensten pagina */
+
+main img{
+   border: 2px solid #292929;
+   opacity: 0.8;
+   box-sizing: border-box;
+}
+main div{
+    font-family: 'Open Sans', sans-serif;
+    color: #292929;
+    text-align: center;
+
+}
+
+
+
+section{
     display: grid;
-   grid-template-columns: 1fr 1fr  1fr 1fr;
-   grid-template-rows: minmax(100px,auto) 2fr 2fr 2fr;
-   grid gap: 10px;
+    grid-template-rows: 2fr 2fr 2fr;
+}
+article{
+    display:grid;
+    grid-template-columns: .5fr 1fr 1fr .5fr;
+    column-gap: 2em;
+    grid-template-areas: 
+    " . welnesstekst welnessfoto .";
+    box-sizing: border-box;
+
    
-   grid-template-areas:
-   
-   " . welnesstekst welnessfoto . "
-   " . transportfoto transporttekst . "
-   " . recreatietekst recreatiefoto . ";
-          
-   
-   
+
+}
+article:nth-child(2){
+    display:grid;
+    grid-template-columns: .5fr 1fr 1fr .5fr;
+    column-gap: 2em;
+    grid-template-areas: 
+    " . transportfoto transporttekst .";
+    margin-top: 2rem;
+    box-sizing: border-box;
    
 }
+article:nth-child(3){
+    display:grid;
+    grid-template-columns: .5fr 1fr 1fr .5fr;
+    column-gap: 2em;
+    grid-template-areas: 
+    " . recreatietekst recreatiefoto .";
+     margin-top: 3rem;
+     box-sizing: border-box;
+   
+}
+
+.welnesstekst::before{
+    content: url(../images/divider.png);
+    position:absolute;
+    padding-left: 44px;
+}
+
+.transporttekst::before{
+    content: url(../images/divider.png);
+    position:absolute;
+    padding-left: 44px;
+}
+.recreatietekst::before{
+    content: url(../images/divider.png);
+    position:absolute;
+    padding-left: 44px;
+}
+
 
 .welnesstekst{
-grid-area: welnesstekst;
+    grid-area: welnesstekst;
+    display:grid;
+    box-sizing: border-box;
+    height: 300px;
+    width: 600px;
+    
 }
 
 
 .welnessfoto{
-    height: 20%;
     grid-area: welnessfoto;
     height: 300px;
     width: 600px;
@@ -104,11 +178,16 @@ grid-area: welnesstekst;
 
 .transporttekst{
     grid-area: transporttekst;
+    display:grid;
+    box-sizing: border-box;
+    height: 300px;
+    width: 600px;
+    
     
 }
 .transportfoto{
-grid-area: transportfoto;
-height: 300px;
+    grid-area: transportfoto;
+    height: 300px;
     width: 600px;
 }
 .recreatiefoto{
@@ -118,4 +197,59 @@ height: 300px;
 }
 .recreatietekst{
     grid-area: recreatietekst;
+    display:grid;
+    box-sizing: border-box;
+    height: 300px;
+    width: 600px;
+    
 }
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    align-self: center;
+    justify-self: center;
+    }
+
+footer ul li a, footer ul li{
+    list-style: none; 
+    text-decoration: none;
+    color:white;
+    line-height:40px;
+}
+
+footer{
+    margin-top: 2rem;
+    background-image: url(../images/footer-bg.png);
+    border-top:4px solid #c7a464;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 3fr 1fr  ;
+    grid-template-areas: 
+         "footerlinks footercenter footerrechts"
+         "copyrightbalk copyrightbalk copyrightbalk"
+    ;
+}
+
+.footerlinks{
+    grid-area: footerlinks;
+    
+}
+
+.footercenter{
+    grid-area: footercenter;
+}
+.footerrechts{
+    grid-area: footerrechts;
+    justify-self: right;
+    padding: 1rem 6rem 0 0 ;
+}
+.copyrightbalk{
+    grid-area: copyrightbalk;
+    text-align: center;
+    opacity: 0.6;
+    color: white ;
+}
+
+
+
+/*  einde diensten pagina */
