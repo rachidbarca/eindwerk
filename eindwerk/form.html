@@ -34,7 +34,7 @@
         <span class="error" id="volwassenen_error"></span>
         <label for="kinderen">Kinderen:</label>
         <select name="kinderen" id="kinderen">
-            <option value="x">Selecteer</option>
+            <option value="">Selecteer</option>
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -53,16 +53,17 @@
             <label for="checkout">Check out:</label>
             <input type="Date" id="checkout" />
             <span class="error" id="checkout_error"></span>
-            <p>
-            <p>
-                <label for="kamer">Kamer:</label>
-                <select name="kamer" id="kamer">
-            <option value="x">Selecteer</option>
-            <option value="0">Classic Suite</option>
-            <option value="1">Presidential Suite</option>
-            <option value="Royal Suite">Royal Suite</option>
-        </select>
-            </p>
-                <button type="button" value="verstuur" id="knop_verstuur" onclick="verstuur()">Verstuur</button>
-                <script src="javascript/form.js"></script>
+        </p>
+        <p>
+            <label for="kamer">Kamer:</label>
+            <select name="kamer" id="kamer">
+                <option value="">Selecteer</option>
+                <option value="Classic">Classic suite</option>
+                <option value="Presidential">Presidential Suite</option>
+                <option value="Royal">Royal Suite</option>
+            </select>
+            <span class="error" id="kamer_error"></span>
+        </p>
+        <button type="button" value="verstuur" id="knop_verstuur" onclick="verstuur()">Verstuur</button>
+        <script src="javascript/form.js"></script>
 </form>
