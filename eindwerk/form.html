@@ -1,3 +1,8 @@
+<style>
+    .error {
+        color:red;
+    }
+</style>
 <form id="formulier">
     <p>
         <label for="voornaam">Voornaam:</label>
@@ -42,13 +47,22 @@
         </select>
         <span class="error" id="kinderen_error"></span>
         <p>
-            <label>Check in:</label>
-            <input type="Date" id="checkin" />
+            <label for="checkin">Check in:</label>
+            <input type="text" id="checkin" />
             <span class="error" id="checkin_error"></span>
-            <label>Check out:</label>
+            <label for="checkout">Check out:</label>
             <input type="Date" id="checkout" />
             <span class="error" id="checkout_error"></span>
             <p>
+            <p>
+                <label for="kamer">Kamer:</label>
+                <select name="kamer" id="kamer">
+            <option value="x">Selecteer</option>
+            <option value="0">Classic Suite</option>
+            <option value="1">Presidential Suite</option>
+            <option value="Royal Suite">Royal Suite</option>
+        </select>
+            </p>
                 <button type="button" value="verstuur" id="knop_verstuur" onclick="verstuur()">Verstuur</button>
                 <script src="javascript/form.js"></script>
 </form>

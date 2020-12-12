@@ -6,6 +6,7 @@
     let volwassenenTxt;
     let geselecteerdekinderen;
     let kinderenTxt;
+    let checkinTxt;
 
     let allesCorrectIngevuld = true;
     // var die bijhoudt of er ergens een fout is of niet
@@ -32,6 +33,15 @@
             document.getElementById("voornaam_error").innerHTML = "";
         }
     }
+    function controleerVoorwaardencheckin() {
+    	let regEx = /^(0[1-9]|[12][0-9]|3[01])[\/](0[1-9]|1[012])[\/](19|20)\d\d$/;
+    	if (regEx.test(checkinTxt) == false) {
+    		document.getElementById("checkin_error").innerHTML = "Je hebt de datum verkeerd ingevoerd ( dd / mm / jjjj )."
+    	}
+    	else {
+    		document.getElementById("checkin_error").innerHTML = "";
+    	}
+    }
  	function controleerVoorwaardenEmail() {
  		let regEx = /^[A-Za-z][\.A-Za-z0-9+_-]+@[\.A-Za-z0-9-]+\.[A-Za-z]{2,10}$/;
         if (regEx.test(emailTxt) == false) {
@@ -56,6 +66,7 @@
         volwassenenTxt = document.getElementById("volwassenen").value;
         geselecteerdekinderen = document.getElementById("kinderen").selectedIndex;
         kinderenTxt = document.getElementById("kinderen").value;
+        checkinTxt = document.getElementById("checkin").value;
         //getElementsByClassName geeft een array van al de elementen
 
        
@@ -102,10 +113,17 @@
          if (geselecteerdekinderen == 0) {
             document.getElementById("kinderen_error").innerHTML = "Kies a.u.b.";
             allesCorrectIngevuld = false;
-        } else {
+        } 
+        else {
             document.getElementById("kinderen_error").innerHTML = "";
         }
-
+        if (checkin == 0) {
+        	document.getElementById("checkin_error").innerHTML = "U heeft niets ingevoerd.";
+        	allesCorrectIngevuld = false;
+        }
+        else {
+        	controleerVoorwaardencheckin()
+        }
         //uiteindelijk controleren of alles correct is
         //deze if blijft altijd allerlaatst in de verstuur() functie
         if (allesCorrectIngevuld) {
