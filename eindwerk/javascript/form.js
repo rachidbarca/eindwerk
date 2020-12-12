@@ -2,6 +2,10 @@
     let voornaamTxt;
     let achternaamTxt;
     let emailTxt;
+    let geselecteerdevolwassenen;
+    let volwassenenTxt;
+    let geselecteerdekinderen;
+    let kinderenTxt;
 
     let allesCorrectIngevuld = true;
     // var die bijhoudt of er ergens een fout is of niet
@@ -34,13 +38,10 @@
             document.getElementById("mail_error").innerHTML = "Je email moet minstens 2 karakters bevatten!";
             allesCorrectIngevuld = false;
         } 
-      
-        }
         else {
             document.getElementById("mail_error").innerHTML = "";
         }
-
-
+}
 
 
     // ----------------------------------------
@@ -51,6 +52,10 @@
         voornaamTxt = document.getElementById("voornaam").value;
        	achternaamTxt = document.getElementById("achternaam").value;
         emailTxt = document.getElementById("email").value;
+        geselecteerdevolwassenen = document.getElementById("volwassenen").selectedIndex;
+        volwassenenTxt = document.getElementById("volwassenen").value;
+        geselecteerdekinderen = document.getElementById("kinderen").selectedIndex;
+        kinderenTxt = document.getElementById("kinderen").value;
         //getElementsByClassName geeft een array van al de elementen
 
        
@@ -87,7 +92,19 @@
     		controleerVoorwaardenEmail()
     	}
 
+    	 if (geselecteerdevolwassenen == 0) {
+            document.getElementById("volwassenen_error").innerHTML = "Kies a.u.b.";
+            allesCorrectIngevuld = false;
+        } else {
+            document.getElementById("volwassenen_error").innerHTML = "";
+        }
 
+         if (geselecteerdekinderen == 0) {
+            document.getElementById("kinderen_error").innerHTML = "Kies a.u.b.";
+            allesCorrectIngevuld = false;
+        } else {
+            document.getElementById("kinderen_error").innerHTML = "";
+        }
 
         //uiteindelijk controleren of alles correct is
         //deze if blijft altijd allerlaatst in de verstuur() functie
@@ -96,3 +113,4 @@
         }
     
     } //einde verstuur()
+

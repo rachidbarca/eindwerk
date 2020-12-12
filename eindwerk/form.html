@@ -1,51 +1,54 @@
-
 <form id="formulier">
+    <p>
+        <label for="voornaam">Voornaam:</label>
+        <input type="text" id="voornaam" />
+        <span class="error" id="voornaam_error"></span>
+    </p>
+    <p>
+        <label for="achternaam">Achternaam:</label>
+        <input type="text" id="achternaam" />
+        <span class="error" id="achternaam_error"> </span>
+    </p>
+    <p>
+        <label for="email">Email:</label><input type="text" id="email" />
+        <span class="error" id="mail_error"></span>
+    </p>
+    <p>
+        <label for="volwassenen">Volwassenen:</label>
+        <select name="volwassenen" id="volwassenen">
+            <option value="">Selecteer</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+        <span class="error" id="volwassenen_error"></span>
+        <label for="kinderen">Kinderen:</label>
+        <select name="kinderen" id="kinderen">
+            <option value="x">Selecteer</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+        <span class="error" id="kinderen_error"></span>
         <p>
-            <label for="voornaam">Voornaam:</label>
-            <input type="text" id="voornaam" />
-            <span class="error" id="voornaam_error"></span>
-        </p>
-        <p>
-            <label for="achternaam">Achternaam:</label>
-            <input type="text" id="achternaam" />
-            <span class="error" id="achternaam_error"> </span>
-        </p>
-        <p>
-           
-            <label for="email">Email:</label><input type="text" id="email" />
-            <span class="error" id="mail_error"></span>
-        </p>
-        <p>
-            <label for="volwassenen">Volwassenen:</label>
-            <select name="wagen" id="wagen">
-                <option value="">Selecteer</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-            </select>
-            <span class="error" id="volwassenen_error"></span>
-        </p>
-          <label for="kinderen">Kinderen:</label>
-            <select name="wagen" id="wagen">
-                <option value="">Selecteer</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-            </select>
-            <span class="error" id="kinderen_error"></span>
-        </p>
-        <p>
-         <button type="button" value="verstuur" id="knop_verstuur" onclick="verstuur()"/>Verstuur</button>
-
-         <script src="javascript/form.js"></script>
-    </form>
+            <label>Check in:</label>
+            <input type="Date" id="checkin" />
+            <span class="error" id="checkin_error"></span>
+            <label>Check out:</label>
+            <input type="Date" id="checkout" />
+            <span class="error" id="checkout_error"></span>
+            <p>
+                <button type="button" value="verstuur" id="knop_verstuur" onclick="verstuur()">Verstuur</button>
+                <script src="javascript/form.js"></script>
+</form>
