@@ -227,7 +227,7 @@ footer ul li a, footer ul li{
 footer{
     margin-top: 2rem;
     background-image: url(../images/footer-bg.png);
-    background-size: cover;
+    background-size:cover;
     border-top:4px solid #c7a464;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
