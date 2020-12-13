@@ -146,19 +146,25 @@ article:nth-child(3){
     content: url(../images/divider.png);
     position:absolute;
     padding-left: 44px;
+    padding-top: 1rem;
 }
 
 .transporttekst::before{
     content: url(../images/divider.png);
     position:absolute;
     padding-left: 44px;
+    padding-top: 1rem;
 }
 .recreatietekst::before{
     content: url(../images/divider.png);
     position:absolute;
     padding-left: 44px;
+    padding-top: 1rem;
 }
-
+h2{
+    font-family: open-sans;
+    font-style: italic;
+}
 
 .welnesstekst{
     grid-area: welnesstekst;
@@ -205,9 +211,10 @@ article:nth-child(3){
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: open-sans, sans-serif;
     align-self: center;
     justify-self: center;
+
     }
 
 footer ul li a, footer ul li{
@@ -220,6 +227,7 @@ footer ul li a, footer ul li{
 footer{
     margin-top: 2rem;
     background-image: url(../images/footer-bg.png);
+    background-size: cover;
     border-top:4px solid #c7a464;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
@@ -237,7 +245,24 @@ footer{
 
 .footercenter{
     grid-area: footercenter;
+    
 }
+
+#mailchimp {
+    color: white;
+    padding: 2rem;
+}
+#mailchimp input {
+background-color: #c7a464;
+color: white;
+padding: 10px;
+margin: 10px;
+border: 1px solid white;
+}
+.buttonmailchimp {
+    width: 240px;
+}
+
 .footerrechts{
     grid-area: footerrechts;
     justify-self: right;
