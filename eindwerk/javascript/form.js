@@ -122,8 +122,8 @@
 
 
 
-     if (geselecteerdekamer == 0) {
-         document.getElementById("kamer_error").innerHTML = "U heeft niets ingevoerd. ";
+     if (kamerTxt == 0) {
+         document.getElementById("kamer_error").innerHTML = "U heeft niets gekozen. ";
          allesCorrectIngevuld = false;
      } else {
          document.getElementById("kamer_error").innerHTML = "";
