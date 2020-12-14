@@ -138,10 +138,15 @@
 
 
 
-     //uiteindelijk controleren of alles correct is
-     //deze if blijft altijd allerlaatst in de verstuur() functie
+  
      if (allesCorrectIngevuld) {
          document.write("Alles is correct ingevuld");
      }
 
- } //einde verstuur()
+ }
+
+
+
+
+
+
