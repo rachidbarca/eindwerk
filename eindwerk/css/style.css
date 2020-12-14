@@ -115,7 +115,7 @@ article{
     grid-template-columns: .5fr 1fr 1fr .5fr;
     column-gap: 2em;
     grid-template-areas: 
-    " . welnesstekst welnessfoto .";
+    ". linksboven rechtsboven .";
     box-sizing: border-box;
 
    
@@ -126,7 +126,7 @@ article:nth-child(2){
     grid-template-columns: .5fr 1fr 1fr .5fr;
     column-gap: 2em;
     grid-template-areas: 
-    " . transportfoto transporttekst .";
+    " . linksmidden rechtsmidden .";
     margin-top: 2rem;
     box-sizing: border-box;
    
@@ -136,26 +136,26 @@ article:nth-child(3){
     grid-template-columns: .5fr 1fr 1fr .5fr;
     column-gap: 2em;
     grid-template-areas: 
-    " . recreatietekst recreatiefoto .";
+    " . linksonder rechtsonder .";
      margin-top: 3rem;
      box-sizing: border-box;
    
 }
 
-.welnesstekst::before{
+.linksboven::before{
     content: url(../images/divider.png);
     position:absolute;
     padding-left: 44px;
     padding-top: 1rem;
 }
 
-.transporttekst::before{
+.rechtsmidden::before{
     content: url(../images/divider.png);
     position:absolute;
     padding-left: 44px;
     padding-top: 1rem;
 }
-.recreatietekst::before{
+.linksonder::before{
     content: url(../images/divider.png);
     position:absolute;
     padding-left: 44px;
@@ -166,8 +166,8 @@ h2{
     font-style: italic;
 }
 
-.welnesstekst{
-    grid-area: welnesstekst;
+.linksboven{
+    grid-area: linksboven;
     display:grid;
     box-sizing: border-box;
     height: 300px;
@@ -176,14 +176,14 @@ h2{
 }
 
 
-.welnessfoto{
-    grid-area: welnessfoto;
+.rechtsboven{
+    grid-area: rechtsboven;
     height: 300px;
     width: 600px;
 }
 
-.transporttekst{
-    grid-area: transporttekst;
+.rechtsmidden{
+    grid-area: rechtsmidden;
     display:grid;
     box-sizing: border-box;
     height: 300px;
@@ -191,18 +191,18 @@ h2{
     
     
 }
-.transportfoto{
-    grid-area: transportfoto;
+.linksmidden{
+    grid-area: linksmidden;
     height: 300px;
     width: 600px;
 }
-.recreatiefoto{
-    grid-area: recreatiefoto;
+.rechtsonder{
+    grid-area: rechtsonder;
     height: 300px;
     width: 600px;
 }
-.recreatietekst{
-    grid-area: recreatietekst;
+.linksonder{
+    grid-area: linksonder;
     display:grid;
     box-sizing: border-box;
     height: 300px;
@@ -214,7 +214,7 @@ p {
     font-family: open-sans, sans-serif;
     align-self: center;
     justify-self: center;
-
+    text-align:left;
     }
 
 footer ul li a, footer ul li{
@@ -258,6 +258,7 @@ color: white;
 padding: 10px;
 margin: 10px;
 border: 1px solid white;
+text-align: center;
 }
 .buttonmailchimp {
     width: 240px;
@@ -274,7 +275,13 @@ border: 1px solid white;
     opacity: 0.6;
     color: white ;
 }
-
+.copyrightbalk p{
+    text-align: center;
+    margin: auto;
+}
 
 
 /*  einde diensten pagina */
+
+/*Begin restaurant pagina*/
+
