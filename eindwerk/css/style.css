@@ -98,9 +98,10 @@ main img{
    box-sizing: border-box;
 }
 main div{
-    font-family: 'Open Sans', sans-serif;
+    font-family: open-sans, sans-serif;
     color: #292929;
     text-align: center;
+    
 
 }
 
@@ -208,6 +209,7 @@ h2{
     height: 300px;
     width: 600px;
     
+    
 }
 
 p {
@@ -215,6 +217,8 @@ p {
     align-self: center;
     justify-self: center;
     text-align:left;
+    width: 80%;
+    line-height: 28px;
     }
 
 footer ul li a, footer ul li{
