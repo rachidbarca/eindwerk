@@ -1,6 +1,11 @@
 <style>
     .error {
-        color:red;
+        color:#FFFFFF;
+        background-color:red;
+        border-radius:7px 0px 7px 0px;
+    }
+    #formulier {
+    
     }
 </style>
 <form id="formulier">
@@ -8,12 +13,11 @@
         <label for="voornaam">Voornaam:</label>
         <input type="text" id="voornaam" />
         <span class="error" id="voornaam_error"></span>
-    </p>
-    <p>
-        <label for="achternaam">Achternaam:</label>
+           <label for="achternaam">Achternaam:</label>
         <input type="text" id="achternaam" />
         <span class="error" id="achternaam_error"> </span>
     </p>
+    
     <p>
         <label for="email">Email:</label><input type="text" id="email" />
         <span class="error" id="mail_error"></span>
@@ -65,5 +69,7 @@
             <span class="error" id="kamer_error"></span>
         </p>
         <button type="button" value="verstuur" id="knop_verstuur" onclick="verstuur()">Verstuur</button>
-        <script src="javascript/form.js"></script>
+    
 </form>
+
+<script src="javascript/form.js"></script>
