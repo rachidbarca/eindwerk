@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
 body{
-    background:#dbc8a6 ;
+    
+    background: radial-gradient(circle, rgba(219,200,166,1) 39%, rgba(199,164,100,1) 100%);
 
 }
 header{
