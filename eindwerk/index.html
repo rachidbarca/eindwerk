@@ -17,9 +17,9 @@
 
     }
 
-    .subnav ul li {
+    .subnav ul {
         list-style: none;
-
+        display: flex;
 
     }
 
@@ -28,9 +28,15 @@
         font-family: 'Open Sans', sans-serif;
         text-decoration: none;
         color: #c7a464;
+         margin-left: 30px;
+      
     }
 
-
+    .subnav ul li a:nth-child(2),
+    .subnav ul li a:nth-child(3) {
+        
+       
+    }
     </style>
 </head>
 
@@ -56,11 +62,11 @@
     </header>
     <div class="jumbotron">
         <div class="subnav">
-                <ul>
-                    <li><a href="#">Test</a></li>
-                    <li><a href="#">Test</a></li>
-                    <li><a href="#">Test</a></li>
-                </ul>
+            <ul>
+                <li><a href="#">Test</a></li>
+                <li><a href="#">Test</a></li>
+                <li><a href="#">Test</a></li>
+            </ul>
         </div>
     </div>
 </body>
