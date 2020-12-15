@@ -9,11 +9,19 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slidejumb.css">
     <style>
+   body {
+    scroll-behavior:smooth;
+   }
+
+
     .subnav {
         width: 250px;
         background: #292929;
         height: 40px;
         display: flex;
+        border-bottom:4px solid #c7a464;
+        border-right:4px solid #c7a464;
+      
 
     }
 
@@ -22,22 +30,30 @@
         display: flex;
 
     }
-
     .subnav ul li a {
         font-size: 16px;
         font-family: 'Open Sans', sans-serif;
         text-decoration: none;
         color: #c7a464;
-         margin-left: 30px;
-      
+        margin-right:20px;
     }
+.subnav ul li a:hover {
+color:#FFFFFF;
 
-    .subnav ul li a:nth-child(2),
-    .subnav ul li a:nth-child(3) {
-        
-       
-    }
+
+}
+/* Voeg dit onderaan de css toe :); */
+
+::selection {
+background-color:#000000;
+color:#c7a464;
+
+
+}
+
     </style>
+
+
 </head>
 
 <body>
