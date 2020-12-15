@@ -7,17 +7,16 @@
  let geselecteerdekinderen;
  let kinderenTxt;
  let checkinTxt;
+ let checkoutTxt;
  let kamerTxt;
  let geselecteerdekamer;
 
  let allesCorrectIngevuld = true;
- // var die bijhoudt of er ergens een fout is of niet
 
 
 
- // ----------------------------------------
- // 				Controleren
- // ----------------------------------------
+
+
 
  function controleerVoorwaardenVoornaam() {
      if (voornaamTxt.length < 2) {
@@ -46,6 +45,15 @@
      }
  }
 
+ function controleerVoorwaardencheckout() {
+     let regEx = /^(0[1-9]|[12][0-9]|3[01])[\/](0[1-9]|1[012])[\/](19|20)\d\d$/;
+     if (regEx.test(checkinTxt) == false) {
+         document.getElementById("checkout_error").innerHTML = "Je hebt de datum verkeerd ingevoerd ( dd / mm / jjjj )."
+     } else {
+         document.getElementById("checkout_error").innerHTML = "";
+     }
+ }
+
  function controleerVoorwaardenEmail() {
      let regEx = /^[A-Za-z][\.A-Za-z0-9+_-]+@[\.A-Za-z0-9-]+\.[A-Za-z]{2,10}$/;
      if (regEx.test(emailTxt) == false) {
@@ -57,10 +65,6 @@
  }
 
 
- // ----------------------------------------
- // 	Als op 'versturen' geklikt wordt
- // ----------------------------------------
-
  function verstuur() {
      voornaamTxt = document.getElementById("voornaam").value;
      achternaamTxt = document.getElementById("achternaam").value;
@@ -70,24 +74,22 @@
      geselecteerdekinderen = document.getElementById("kinderen").selectedIndex;
      kinderenTxt = document.getElementById("kinderen").value;
      checkinTxt = document.getElementById("checkin").value;
+     checkoutTxt = document.getElementById("checkout").value;
      geselecteerdekamer = document.getElementById("kamer").SelectedIndex;
      kamerTxt = document.getElementById("kamer").value;
-     //getElementsByClassName geeft een array van al de elementen
 
 
 
 
 
 
-     //Via JS vraag je het element uit de webpagina op met de id voornaam. Van dat element vraag je de value op, de inhoud
      allesCorrectIngevuld = true;
-     //als er op de knop geklikt wordt, moet het bijhouden van de fouten gereset worden
 
      if (voornaamTxt.length == 0) {
          document.getElementById("voornaam_error").innerHTML = "Vul in a.u.b.";
          allesCorrectIngevuld = false;
      } else {
-         //aparte functie aanmaken om de voorwaarden te controleren
+
          controleerVoorwaardenVoornaam()
      }
 
@@ -135,18 +137,45 @@
      } else {
          controleerVoorwaardencheckin()
      }
+     if (checkout == 0) {
+         document.getElementById("checkout_error").innerHTML = "U heeft niets ingevoerd.";
+         allesCorrectIngevuld = false;
+     } else {
+         controleerVoorwaardencheckout()
+     }
 
 
 
-  
      if (allesCorrectIngevuld) {
          document.write("Alles is correct ingevuld");
+         let mailer = "mailto:" + encodeURIComponent("surinx_jordy@outlook.com") +
+             "?cc=" + encodeURIComponent("") +
+             "&subject=" + encodeURIComponent(`${kamerTxt} geboekt door ${achternaamTxt} ${voornaamTxt}`) +
+             "&body=" +
+             "voornaam:" +
+             encodeURIComponent(voornaamTxt) +
+             encodeURIComponent("\r\n\n") +
+             "achternaam:" +
+             encodeURIComponent(achternaamTxt) +
+             encodeURIComponent("\r\n\n") +
+             "email:" +
+             encodeURIComponent(emailTxt) +
+             encodeURIComponent("\r\n\n") +
+             "Aantal volwassenen:" +
+             encodeURIComponent(volwassenenTxt) +
+             "Aantal kinderen:" +
+             encodeURIComponent(kinderenTxt) +
+             encodeURIComponent("\r\n\n") +
+             "Check in:" +
+             encodeURIComponent(checkinTxt) +
+             encodeURIComponent("\r\n\n") +
+             "Check out:" +
+             encodeURIComponent(checkoutTxt) +
+             encodeURIComponent("\r\n\n") +
+             "Suite:" +
+             encodeURIComponent(kamerTxt) +
+             encodeURIComponent("\r\n\n") 
+         window.location.href = mailer;
      }
 
  }
-
-
-
-
-
-
