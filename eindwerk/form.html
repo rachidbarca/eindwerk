@@ -1,25 +1,45 @@
 <style>
+    body {
+        background:black;
+    }
     .error {
         color:#FFFFFF;
         background-color:red;
         border-radius:7px 0px 7px 0px;
     }
-    #formulier {
-    
+    input {
+    background-color: rgba(0,0,0,0.1);
+    color: #c7a464;
+padding: 10px;
+margin: 10px;
+border: 1px solid #c7a464;
+text-align: center;
     }
+    label {
+        color:#FFF;
+    }
+    select {
+        
+    }
+::placeholder {
+    color:#FFF;
+    text-align:left;
+    font-weight:bold;
+}
 </style>
 <form id="formulier">
     <p>
-        <label for="voornaam">Voornaam:</label>
-        <input type="text" id="voornaam" />
+        
+        <input type="text" id="voornaam" placeholder="Voornaam">
         <span class="error" id="voornaam_error"></span>
-           <label for="achternaam">Achternaam:</label>
-        <input type="text" id="achternaam" />
+          
+        <input type="text" id="achternaam" placeholder="Achternaam">
         <span class="error" id="achternaam_error"> </span>
     </p>
     
     <p>
-        <label for="email">Email:</label><input type="text" id="email" />
+        
+        <input type="text" id="email" placeholder="e-mail" >
         <span class="error" id="mail_error"></span>
     </p>
     <p>
