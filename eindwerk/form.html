@@ -1,6 +1,5 @@
 <style>
-    body {
-        background:black;
+
     }
     .error {
         color:#FFFFFF;
@@ -19,15 +18,19 @@ text-align: center;
         color:#FFF;
     }
     select {
-        
+
     }
 ::placeholder {
     color:#FFF;
     text-align:left;
     font-weight:bold;
 }
+h1 {
+    color:#FFF;
+}
 </style>
 <form id="formulier">
+      <span class="correct" id="correctomundo"></span>
     <p>
         
         <input type="text" id="voornaam" placeholder="Voornaam">
@@ -88,8 +91,7 @@ text-align: center;
             </select>
             <span class="error" id="kamer_error"></span>
         </p>
-        <button type="button" value="verstuur" id="knop_verstuur" onclick="verstuur()">Verstuur</button>
+       <button type="button" value="verstuur" id="knop_verstuur" onclick="verstuur()">Verstuur</button>
     
 </form>
-
 <script src="javascript/form.js"></script>
