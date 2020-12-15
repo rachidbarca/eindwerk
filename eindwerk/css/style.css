@@ -294,4 +294,10 @@ i{
 /*  einde diensten pagina */
 
 
+/*Prijzen pagina begint hier */
 
+.kamersgroep{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:2fr 2fr 2fr;
+}

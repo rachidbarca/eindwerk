@@ -38,9 +38,10 @@ width:600px;
 
 .slide_buttons {
   left: 0;
-  position: absolute;
+  position: relative;
   right: 0;
   text-align: center;
+  z-index: 1;
 }
 
 a.slide_btn {
