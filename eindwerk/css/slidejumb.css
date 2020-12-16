@@ -27,7 +27,7 @@ width:600px;
   height: 100%;
   position: absolute;
   width: 100%;
-  background:#FFFFFF;
+  
 }
 
 .slide:first-child {
@@ -66,6 +66,33 @@ a.slide_btn {
   max-width: 940px;
   position: relative;
   top: -340px;
+}
+.previous_btn {
+  bottom: 0;
+  left: 100px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+}
+
+.next_btn {
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+
+.previous_btn, .next_btn {
+  cursor: pointer;
+  height: 65px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  width: 65px;
 }
 
 @media only screen and (max-width: 767px) {
