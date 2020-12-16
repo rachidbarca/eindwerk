@@ -30,6 +30,9 @@ header {
     gap: 10px;
     padding: 40px 0px;
 }
+ul h2 {
+    text-align:left;
+}
 
 .nav ul li a {
     color: #c7a464;
