@@ -336,11 +336,12 @@ i{
     height: 400px;
     list-style: "~ ";
     margin: auto;
-    color:#FFFFFF;
+    color:#d4c9c9e2;
     background:url(../images/footer-bg.png);
     max-width:300px;
     min-width:250px;
     border:4px solid #FFFFFF;
+    padding-top: 20px;
 }
 .kamerinfo li{
     align-self:start ;
