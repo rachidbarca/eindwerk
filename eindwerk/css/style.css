@@ -382,6 +382,25 @@ i {
     padding: 5px;
     margin-bottom: 10px;
     width: 100px;
+    background-color:rgba(0,0,0,0.1);
+    border: 1px solid #c7a464;
+    color:#FFF;
+    margin-left:-15%;
+    margin-top:6%;
+    margin-right:auto;
+    cursor:pointer;
+
+}
+.kamerinfo a {
+
+    text-decoration:none;
+}
+.kamerinfo button:focus {
+    outline:none;
+}
+.kamerinfo button:hover {
+    background-color:rgba(255,255,255,1);
+    color:#292929;
 }
 
 .subnav {
