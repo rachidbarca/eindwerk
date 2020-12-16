@@ -1,0 +1,38 @@
+<style>
+    textarea {
+        height:200px;
+        width:400px;
+    }
+    #onderwerp {
+        width:400px;
+    }
+</style>
+<h1>Contacteer ons</h1>
+<form>
+    <span class="correct" id="correctomundo"></span>
+    <p>
+        
+        <input type="text" id="voornaam" placeholder="Voornaam">
+        <span class="error" id="voornaam_error"></span>
+          
+        <input type="text" id="achternaam" placeholder="Achternaam">
+        <span class="error" id="achternaam_error"> </span>
+    </p>
+    
+    <p>
+        
+        <input type="text" id="email" placeholder="e-mail" >
+        <span class="error" id="mail_error"></span>
+    </p>
+    <p>
+        <input type="text" id="onderwerp" placeholder="Onderwerp">
+        <span class="error" id="onderwerp_error"></span>
+    </p>
+    <p>
+        <textarea id="bericht" placeholder="Typ hier je vraag"></textarea>
+        <span class="error" id="bericht_error"></span>
+    </p>
+        <button type="button" value="verstuur" id="knop_verstuur" onclick="verstuur()">Verstuur</button>
+    
+</form>
+<script src="javascript/contform.js"></script>

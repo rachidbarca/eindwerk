@@ -1,21 +1,48 @@
 <style>
-    .error {
-        color:red;
+    body {
+    background:brown;
+}
     }
+    .error {
+        color:#FFFFFF;
+        background-color:red;
+        border-radius:7px 0px 7px 0px;
+    }
+    input {
+        background-color: rgba(0,0,0,0.1);
+        color: #c7a464;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid #c7a464;
+        text-align: center;
+        font-family:'Open Sans' , sans-serif;
+    }
+    label {
+        color:#FFF;
+        font-family:'Open Sans' , sans-serif;
+    }
+    select {
+            font-family:'Open Sans' , sans-serif;
+    }
+::placeholder {
+    color:#FFF;
+    text-align:left;
+    font-weight:bold;
+}
+h1 {
+    color:#FFF;
+}
 </style>
 <form id="formulier">
+    <span class="correct" id="correctomundo"></span>
     <p>
-        <label for="voornaam">Voornaam:</label>
-        <input type="text" id="voornaam" />
+        <input type="text" id="voornaam" placeholder="Voornaam">
         <span class="error" id="voornaam_error"></span>
-    </p>
-    <p>
-        <label for="achternaam">Achternaam:</label>
-        <input type="text" id="achternaam" />
+        <input type="text" id="achternaam" placeholder="Achternaam">
         <span class="error" id="achternaam_error"> </span>
     </p>
     <p>
-        <label for="email">Email:</label><input type="text" id="email" />
+        <input type="text" id="email" placeholder="e-mail">
         <span class="error" id="mail_error"></span>
     </p>
     <p>
@@ -50,7 +77,7 @@
             <label for="checkin">Check in:</label>
             <input type="text" id="checkin" placeholder="dd/mm/jj">
             <span class="error" id="checkin_error"></span>
-            <label for="checkout" >Check out:</label>
+            <label for="checkout">Check out:</label>
             <input type="text" id="checkout" placeholder="dd/mm/jj">
             <span class="error" id="checkout_error"></span>
         </p>
@@ -60,10 +87,10 @@
                 <option value="">Selecteer</option>
                 <option value="Classic Suite">Classic suite</option>
                 <option value="Presidential Suite">Presidential Suite</option>
-                <option value="Royal Suite">Royal Suite</option>
+                <option value="Deluxe Suite">Deluxe Suite</option>
             </select>
             <span class="error" id="kamer_error"></span>
         </p>
         <button type="button" value="verstuur" id="knop_verstuur" onclick="verstuur()">Verstuur</button>
-        <script src="javascript/form.js"></script>
 </form>
+<script src="javascript/form.js"></script>

@@ -79,10 +79,6 @@
      kamerTxt = document.getElementById("kamer").value;
 
 
-
-
-
-
      allesCorrectIngevuld = true;
 
      if (voornaamTxt.length == 0) {
