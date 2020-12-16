@@ -335,6 +335,9 @@ i{
     height: 400px;
     list-style: none;
     margin: auto;
+    background:red;
+    max-width:300px;
+    min-width:250px;
 }
 .kamerinfo li{
     align-self:start ;
