@@ -442,3 +442,99 @@ i {
 
 
 }
+
+
+
+/*Home pagina begint hier*/
+
+
+.content{
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+}
+
+.bovengrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr ;
+    grid-template-areas: 
+    ' introtekst introfotos '
+    ;
+}
+
+.introfotos{
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    grid-template-areas: 
+    ' fotolb fotorb'
+    ' fotolo fotoro'
+    ;
+    grid-area: introfotos;
+
+}
+ .introtekst{
+     grid-area: introtekst;
+     padding: 2rem;
+     font-size: 1.5rem;
+     display: grid;
+     justify-self: end;
+     
+ }
+   .introtekst p{
+       justify-self: end;
+   }  
+
+.fotolb{
+    grid-area: fotolb;
+    height: 150px;
+    width: 250px;
+    justify-self:end;
+}
+.fotorb{
+    grid-area: fotorb;
+    height: 150px;
+    width: 250px;
+    
+}
+
+.fotolo{
+    grid-area: fotolo;
+    height: 150px;
+    width: 250px;
+    justify-self: end;
+}
+.fotoro{
+    grid-area: fotoro;
+    height: 150px;
+    width: 250px;
+}
+
+.scheider{
+    border-top: 3px solid;
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 30px;
+    opacity: 0.5;
+}
+
+.overonstekst{
+    width: 1000px;
+    margin: auto;
+   
+}
+.overonsfotos{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    align-content: space-evenly;
+    gap: 50px;
+    
+}
+.imgleft{
+    justify-self: end;
+}
+/*Home pagina eindigt hier*/
