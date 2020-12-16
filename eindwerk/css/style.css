@@ -327,7 +327,7 @@ i {
     grid-template-rows: auto;
     grid-template-areas:
         " kamerslide  kamerinfo "
-        " kamertekst  kamertekst "
+        " kamertekst  nothing "
     ;
 }
 
@@ -339,20 +339,23 @@ i {
 .kamertekst {
     display: grid;
     grid-area: kamertekst;
-    width: 50%;
+    width:750px;
     margin-left: auto;
     margin-right: auto;
+    margin-top:-6%;
     margin-bottom: 2%;
+
 
 
 }
 
 .kamertekst p {
     align-self: start;
-    border: 1px solid black;
+    border:2px solid black;
     width: 80%;
     margin: auto;
     padding: 10px;
+    color:#000;
 }
 
 
@@ -362,6 +365,7 @@ i {
     height: 400px;
     list-style: "~ ";
     margin: auto;
+    margin-top:10%;
     color: #FFFFFF;
     background: url(../images/footer-bg.png);
     max-width: 300px;
