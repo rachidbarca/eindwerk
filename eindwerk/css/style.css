@@ -297,7 +297,50 @@ i{
 /*Prijzen pagina begint hier */
 
 .kamersgroep{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:2fr 2fr 2fr;
+    display:grid;
+    gap: 2rem;
+    grid-template-columns: 2fr  1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    " kamerslide  kamerinfo "
+    " kamertekst  kamertekst "
+   ;
 }
+
+.kamerslide{
+    grid-area: kamerslide;
+    box-sizing: border-box;
+}
+
+.kamertekst{
+    display: grid;
+    grid-area:kamertekst; 
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; 
+    
+    
+}
+.kamertekst p{
+    align-self: start;
+    border: 1px solid black;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+
+.kamerinfo ul {
+    display: grid;
+    box-sizing: border-box;
+    height: 400px;
+    list-style: none;
+    margin: auto;
+}
+.kamerinfo li{
+    align-self:start ;
+    justify-self:start;
+}
+ .kamerinfo button{
+     padding: 5px;
+ }
