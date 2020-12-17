@@ -1,4 +1,52 @@
 <style>
+    .error {
+        color:#FFFFFF;
+        background-color:red;
+        border-radius:7px 0px 7px 0px;
+    }
+    input {
+        background-color: rgba(0,0,0,0.1);
+        color: #c7a464;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid #c7a464;
+        text-align: center;
+        font-family:'Open Sans' , sans-serif;
+    }
+    textarea {
+        background-color: rgba(0,0,0,0.1);
+        color: #c7a464;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid #c7a464;
+        text-align: center;
+        font-family:'Open Sans' , sans-serif;
+    }
+    }
+    select {
+            font-family:'Open Sans' , sans-serif;
+    }
+    button {
+        padding: 5px;
+    margin-bottom: 10px;
+    width: 100px;
+    background-color:rgba(0,0,0,0.1);
+    border: 1px solid #c7a464;
+    color:#FFF;
+    cursor:pointer;
+    }
+button:focus {
+    outline:none;
+}
+ button:hover {
+    background-color:rgba(255,255,255,1);
+    color:#292929;
+}
+::placeholder {
+    color:#FFF;
+    text-align:left;
+    font-weight:bold;
+}
     textarea {
         height:200px;
         width:400px;
@@ -11,17 +59,13 @@
 <form>
     <span class="correct" id="correctomundo"></span>
     <p>
-        
         <input type="text" id="voornaam" placeholder="Voornaam">
         <span class="error" id="voornaam_error"></span>
-          
         <input type="text" id="achternaam" placeholder="Achternaam">
         <span class="error" id="achternaam_error"> </span>
     </p>
-    
     <p>
-        
-        <input type="text" id="email" placeholder="e-mail" >
+        <input type="text" id="email" placeholder="e-mail">
         <span class="error" id="mail_error"></span>
     </p>
     <p>
@@ -32,7 +76,6 @@
         <textarea id="bericht" placeholder="Typ hier je vraag"></textarea>
         <span class="error" id="bericht_error"></span>
     </p>
-        <button type="button" value="verstuur" id="knop_verstuur" onclick="verstuur()">Verstuur</button>
-    
+    <button type="button" value="verstuur" id="knop_verstuur" onclick="verstuur()">Verstuur</button>
 </form>
 <script src="javascript/contform.js"></script>

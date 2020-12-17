@@ -30,6 +30,9 @@ header {
     gap: 10px;
     padding: 40px 0px;
 }
+ul h2 {
+    text-align:left;
+}
 
 .nav ul li a {
     color: #c7a464;
@@ -324,7 +327,7 @@ i {
     grid-template-rows: auto;
     grid-template-areas:
         " kamerslide  kamerinfo "
-        " kamertekst  kamertekst "
+        " kamertekst  nothing "
     ;
 }
 
@@ -336,20 +339,23 @@ i {
 .kamertekst {
     display: grid;
     grid-area: kamertekst;
-    width: 50%;
+    width:750px;
     margin-left: auto;
     margin-right: auto;
+    margin-top:-6%;
     margin-bottom: 2%;
+
 
 
 }
 
 .kamertekst p {
     align-self: start;
-    border: 1px solid black;
+    border:2px solid black;
     width: 80%;
     margin: auto;
     padding: 10px;
+    color:#000;
 }
 
 
@@ -359,6 +365,7 @@ i {
     height: 400px;
     list-style: "~ ";
     margin: auto;
+    margin-top:10%;
     color: #FFFFFF;
     background: url(../images/footer-bg.png);
     max-width: 300px;
@@ -375,6 +382,25 @@ i {
     padding: 5px;
     margin-bottom: 10px;
     width: 100px;
+    background-color:rgba(0,0,0,0.1);
+    border: 1px solid #c7a464;
+    color:#FFF;
+    margin-left:-15%;
+    margin-top:6%;
+    margin-right:auto;
+    cursor:pointer;
+
+}
+.kamerinfo a {
+
+    text-decoration:none;
+}
+.kamerinfo button:focus {
+    outline:none;
+}
+.kamerinfo button:hover {
+    background-color:rgba(255,255,255,1);
+    color:#292929;
 }
 
 .subnav {
