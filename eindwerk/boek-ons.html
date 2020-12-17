@@ -6,19 +6,6 @@
     <title>Boeking</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-
-    <style>
-      body {
-        background: linear-gradient(
-          0deg,
-          rgba(28, 28, 45, 1) 0%,
-          rgba(109, 91, 66, 1) 20%,
-          rgba(222, 177, 96, 1) 100%
-        );
-      }
-
-   
-    </style>
   </head>
 
   <body>
@@ -39,88 +26,85 @@
       </div>
     </header>
     <div class="jumbotron"></div>
+    <div class="kader">
+      <h1>Boekingsformulier</h1>
+      <form id="formulier">
+        <div class="namen">
+          <input type="text" id="voornaam" placeholder="Voornaam" />
+          <span class="error" id="voornaam_error"></span>
+          <input type="text" id="achternaam" placeholder="Achternaam" />
+          <span class="error" id="achternaam_error"> </span>
+        </div>
 
-    <form id="formulier">
-      <span class="correct" id="correctomundo"></span>
-      <div class="namen">
-        <input type="text" id="voornaam" placeholder="Voornaam" />
-        <span class="error" id="voornaam_error"></span>
-        <input type="text" id="achternaam" placeholder="Achternaam" />
-        <span class="error" id="achternaam_error"> </span>
-      </div>
+        <div class="email">
+          <input type="text" id="email" placeholder="e-mail" />
+          <span class="error" id="mail_error"></span>
+        </div>
 
+        <div class="personen">
+          <label for="volwassenen">Volwassenen:</label>
+          <select name="volwassenen" id="volwassenen">
+            <option value="">Selecteer</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+          <span class="error" id="volwassenen_error"></span>
+        </div>
+        <div class="kids">
+          <label for="kinderen">Kinderen:</label>
+          <select name="kinderen" id="kinderen">
+            <option value="">Selecteer</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+          <span class="error" id="kinderen_error"></span>
+        </div>
 
-      <div class="email">
-        <input type="text" id="email" placeholder="e-mail" />
-        <span class="error" id="mail_error"></span>
-      </div>
+        <div class="checks">
+          <label for="checkin">Check in:</label>
+          <input type="text" id="checkin" placeholder="dd/mm/jj" />
+          <span class="error" id="checkin_error"></span>
+        </div>
+        <div>
+          <label for="checkout">Check out:</label>
+          <input type="text" id="checkout" placeholder="dd/mm/jj" />
+          <span class="error" id="checkout_error"></span>
+        </div>
 
+        <div class="kamerselect">
+          <label for="kamer">Suite:</label>
+          <select name="kamer" id="kamer">
+            <option value="">Selecteer</option>
+            <option value="Classic Suite">Classic suite</option>
+            <option value="Presidential Suite">Presidential Suite</option>
+            <option value="Deluxe Suite">Deluxe Suite</option>
+          </select>
+          <span class="error" id="kamer_error"></span>
+        </div>
 
-      <div class="personen">
-        <label for="volwassenen">Volwassenen:</label>
-        <select name="volwassenen" id="volwassenen">
-          <option value="">Selecteer</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-        </select>
-        <span class="error" id="volwassenen_error"></span>
-
-
-        <label for="kinderen">Kinderen:</label>
-        <select name="kinderen" id="kinderen">
-          <option value="">Selecteer</option>
-          <option value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-        </select>
-        <span class="error" id="kinderen_error"></span>
-      </div>
-
-
-      <div class="checks">
-        <label for="checkin">Check in:</label>
-        <input type="text" id="checkin" placeholder="dd/mm/jj" />
-        <span class="error" id="checkin_error"></span>
-        <label for="checkout">Check out:</label>
-        <input type="text" id="checkout" placeholder="dd/mm/jj" />
-        <span class="error" id="checkout_error"></span>
-      </div>
-
-
-      <div class="kamerselect">
-        <label for="kamer">Suite:</label>
-        <select name="kamer" id="kamer">
-          <option value="">Selecteer</option>
-          <option value="Classic Suite">Classic suite</option>
-          <option value="Presidential Suite">Presidential Suite</option>
-          <option value="Deluxe Suite">Deluxe Suite</option>
-        </select>
-        <span class="error" id="kamer_error"></span>
-      </div>
-
-      
-      <button
-        type="button"
-        value="verstuur"
-        id="knop_verstuur"
-        onclick="verstuur()"
-      >
-        Verstuur
-      </button>
-    </form>
-
+        <button
+          type="button"
+          value="verstuur"
+          id="knop_verstuur"
+          onclick="verstuur()"
+        >
+          Verstuur
+        </button>
+      </form>
+    </div>
     <footer>
       <div class="footerlinks">
         <ul>
