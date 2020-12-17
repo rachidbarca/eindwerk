@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boeking</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slidejumb.css" />
+
+    <style>
+      body {
+        background: linear-gradient(
+          0deg,
+          rgba(28, 28, 45, 1) 0%,
+          rgba(109, 91, 66, 1) 20%,
+          rgba(222, 177, 96, 1) 100%
+        );
+      }
+
+   
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Madurodam</h1>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="restaurant.html">Restaurant</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="prijzen.html">Prijzen</a></li>
+          <li><a href="formcontact.html">Contact</a></li>
+          <li><a href="boek-ons.html">Boek nu</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="jumbotron"></div>
+
+    <form id="formulier">
+      <span class="correct" id="correctomundo"></span>
+      <div class="namen">
+        <input type="text" id="voornaam" placeholder="Voornaam" />
+        <span class="error" id="voornaam_error"></span>
+        <input type="text" id="achternaam" placeholder="Achternaam" />
+        <span class="error" id="achternaam_error"> </span>
+      </div>
+
+
+      <div class="email">
+        <input type="text" id="email" placeholder="e-mail" />
+        <span class="error" id="mail_error"></span>
+      </div>
+
+
+      <div class="personen">
+        <label for="volwassenen">Volwassenen:</label>
+        <select name="volwassenen" id="volwassenen">
+          <option value="">Selecteer</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+        </select>
+        <span class="error" id="volwassenen_error"></span>
+
+
+        <label for="kinderen">Kinderen:</label>
+        <select name="kinderen" id="kinderen">
+          <option value="">Selecteer</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+        </select>
+        <span class="error" id="kinderen_error"></span>
+      </div>
+
+
+      <div class="checks">
+        <label for="checkin">Check in:</label>
+        <input type="text" id="checkin" placeholder="dd/mm/jj" />
+        <span class="error" id="checkin_error"></span>
+        <label for="checkout">Check out:</label>
+        <input type="text" id="checkout" placeholder="dd/mm/jj" />
+        <span class="error" id="checkout_error"></span>
+      </div>
+
+
+      <div class="kamerselect">
+        <label for="kamer">Suite:</label>
+        <select name="kamer" id="kamer">
+          <option value="">Selecteer</option>
+          <option value="Classic Suite">Classic suite</option>
+          <option value="Presidential Suite">Presidential Suite</option>
+          <option value="Deluxe Suite">Deluxe Suite</option>
+        </select>
+        <span class="error" id="kamer_error"></span>
+      </div>
+
+      
+      <button
+        type="button"
+        value="verstuur"
+        id="knop_verstuur"
+        onclick="verstuur()"
+      >
+        Verstuur
+      </button>
+    </form>
+
+    <footer>
+      <div class="footerlinks">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="restaurant.html">Restaurant</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="prijzen.html">Prijzen</a></li>
+          <li><a href="formcontact.html">Contact</a></li>
+          <li><a href="boek-ons.html">Boek nu</a></li>
+        </ul>
+      </div>
+
+      <div class="footercenter">
+        <!--Plaats waar de nieuwsbrief inschrijving komt-->
+
+        <form
+          action="https://google.us7.list-manage.com/subscribe/post?u=d0922d1dcbd58345ff27591c9&amp;id=d7804794e8"
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          class="validate"
+          target="_blank"
+          novalidate
+        >
+          <div id="mailchimp">
+            <label for="mce-EMAIL">Nieuwsbrief inschrijving</label> <br />
+            <input
+              type="email"
+              value=""
+              name="EMAIL"
+              class="email"
+              id="mce-EMAIL"
+              placeholder="Typ hier je emailadres"
+              required
+            />
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px" aria-hidden="true">
+              <input
+                type="text"
+                name="b_d0922d1dcbd58345ff27591c9_d7804794e8"
+                tabindex="-1"
+                value=""
+              />
+            </div>
+            <div class="clear">
+              <input
+                type="submit"
+                value="Versturen"
+                name="subscribe"
+                id="mc-embedded-subscribe"
+                class="buttonmailchimp"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="footerrechts">
+        <ul>
+          <li><i class="fas fa-map-marked-alt"> </i> Rembrandtplein 101</li>
+          <li><i class="fas fa-address-card"></i> Amsterdam 1071 AN NL</li>
+          <li><i class="fas fa-phone"> </i> +31 12341234</li>
+          <li><i class="far fa-envelope-open"> </i> Madurodam@info.com</li>
+        </ul>
+      </div>
+
+      <div class="copyrightbalk">
+        <p>&copy;1970-2020 Madurodam</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/03ded771a1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="javascript/form.js"></script>
+  </body>
+</html>
