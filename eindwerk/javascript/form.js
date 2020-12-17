@@ -39,7 +39,7 @@
  function controleerVoorwaardencheckin() {
      let regEx = /^(0[1-9]|[12][0-9]|3[01])[\/](0[1-9]|1[012])[\/](19|20)\d\d$/;
      if (regEx.test(checkinTxt) == false) {
-         document.getElementById("checkin_error").innerHTML = "Je hebt de datum verkeerd ingevoerd ( dd / mm / jjjj )."
+         document.getElementById("checkin_error").innerHTML = "( dd / mm / jjjj )."
      } else {
          document.getElementById("checkin_error").innerHTML = "";
      }
@@ -47,8 +47,8 @@
 
  function controleerVoorwaardencheckout() {
      let regEx = /^(0[1-9]|[12][0-9]|3[01])[\/](0[1-9]|1[012])[\/](19|20)\d\d$/;
-     if (regEx.test(checkinTxt) == false) {
-         document.getElementById("checkout_error").innerHTML = "Je hebt de datum verkeerd ingevoerd ( dd / mm / jjjj )."
+     if (regEx.test(checkoutTxt) == false) {
+         document.getElementById("checkout_error").innerHTML = " ( dd / mm / jjjj )."
      } else {
          document.getElementById("checkout_error").innerHTML = "";
      }
