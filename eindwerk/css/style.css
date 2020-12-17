@@ -587,6 +587,7 @@ select {
 button {
     padding: 5px;
     margin-bottom: 10px;
+    margin-left:5%;
     width: 100px;
     background-color: rgba(0, 0, 0, 0.1);
     border: 1px solid #c7a464;
@@ -630,49 +631,3 @@ textarea {
     background-color: rgba(255, 255, 255, 1);
     color: #292929;
 }
-
-
-
-/*Boekings formulier*/
-
-
-  .error {
-    color: #ffffff;
-    background-color: red;
-    border-radius: 7px 0px 7px 0px;
-  }
-  input {
-    background-color: rgba(0, 0, 0, 0.1);
-    color: white;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid #c7a464;
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-  }
-  label {
-    color: #fff;
-    font-family: "Open Sans", sans-serif;
-    display: inline;
-  }
-  select {
-    font-family: "Open Sans", sans-serif;
-    
-  }
-  ::placeholder {
-    color: #fff;
-    text-align: left;
-    font-weight: bold;
-  }
-  h1 {
-    color: #fff;
-  }
-  #formulier{
-      display: grid;
-      border: 1px solid black;
-      grid-template-columns: auto;
-      grid-template-rows:repeat(5,1fr) ;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-  }

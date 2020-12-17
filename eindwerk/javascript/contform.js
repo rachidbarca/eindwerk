@@ -79,6 +79,7 @@ else {
 
      if (achternaamTxt.length == 0) {
          document.getElementById("achternaam_error").innerHTML = "U heeft niets ingevuld."
+         allesCorrectIngevuld = false;
      } else {
          controleerVoorwaardenAchternaam()
      }
@@ -86,25 +87,28 @@ else {
 
      if (emailTxt.length == 0) {
          document.getElementById("mail_error").innerHTML = "U heeft niets ingevuld."
+         allesCorrectIngevuld = false;
      } else {
          controleerVoorwaardenEmail()
      }
 
     if (onderwerpTxt == 0) {
         document.getElementById("onderwerp_error").innerHTML = "U heeft niets ingevuld."
+        allesCorrectIngevuld = false;
     }
     else {
         controleerVoorwaardenOnderwerp()
     }
     if (berichtTxt == 0) {
         document.getElementById("bericht_error").innerHTML = "U heeft niets ingevuld." 
+        allesCorrectIngevuld = false;
     }
     else {
         controleerVoorwaardenBericht()
     }
 
      if (allesCorrectIngevuld) {
-         document.getElementById("correctomundo").innerHTML = "Alles is correct ingevoerd.";
+         document.getElementById("correctomundo").innerHTML = "Bericht is verstuurd.";
          let mailer = "mailto:" + encodeURIComponent("surinx_jordy@outlook.com") +
              "?cc=" + encodeURIComponent("") +
              "&subject=" + encodeURIComponent(`${onderwerpTxt}`) +

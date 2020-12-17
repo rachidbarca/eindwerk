@@ -8,6 +8,46 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slidejumb.css">
+    <style>
+        .contactcont {
+  display:grid;
+  grid-template-areas:
+    "contact maps";
+  justify-content:center;
+  gap:50px;
+  background-color:rgba(0,0,0,0.6);
+  width:1200px;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:7px 0px 7px 0px;
+  border:4px solid #FFF;
+}
+.contact {
+  grid-area:contact;
+}
+.maps {
+  grid-area:maps;
+  margin-top:100px;
+  border-radius:10px;
+  height:600px;
+  width:700px;
+}
+.error {
+    margin-left:3%;
+    background:#FF0000;
+    color:#FFF;
+    border-radius:4px 0px 4px 0px;
+}
+#correctomundo {
+    background:green;
+    color:#FFF;
+    margin-left:3%;
+}
+.title {
+    text-align:center;
+}
+    </style>
+}
 
 </head>
 
@@ -27,38 +67,43 @@
                 <li><a href="boek-ons.html">Boek nu</a></li>
             </ul>
         </div>
-       
     </header>
     <div class="jumbotron">
     </div>
-
-
-<form>
-    <span class="correct" id="correctomundo"></span>
-    <p>
-        <input type="text" id="voornaam" placeholder="Voornaam">
-        <span class="error" id="voornaam_error"></span>
-        <input type="text" id="achternaam" placeholder="Achternaam">
-        <span class="error" id="achternaam_error"> </span>
-    </p>
-    <p>
-        <input type="text" id="email" placeholder="e-mail">
-        <span class="error" id="mail_error"></span>
-    </p>
-    <p>
-        <input type="text" id="onderwerp" placeholder="Onderwerp">
-        <span class="error" id="onderwerp_error"></span>
-    </p>
-    <p>
-        <textarea id="bericht" placeholder="Typ hier je vraag"></textarea>
-        <span class="error" id="bericht_error"></span>
-    </p>
-    <button type="button" value="verstuur" id="knop_verstuur" onclick="verstuur()">Verstuur</button>
-</form>
-
-
-
-
+    <h1 class="title">Contacteer ons</h1>
+    <div class="contactcont">
+        <div class="contact">
+            <form>
+              <p>
+                <span class="correct" id="correctomundo"></span>
+              </p>
+                <p>
+                    <span class="error" id="voornaam_error"></span>
+                    <input type="text" id="voornaam" placeholder="Voornaam">
+                </p>
+                <p>
+                    <span class="error" id="achternaam_error"> </span>
+                    <input type="text" id="achternaam" placeholder="Achternaam">
+                </p>
+                <p>
+                    <span class="error" id="mail_error"></span>
+                    <input type="text" id="email" placeholder="e-mail">
+                </p>
+                <p>
+                    <span class="error" id="onderwerp_error"></span>
+                    <input type="text" id="onderwerp" placeholder="Onderwerp">
+                </p>
+                <p>
+                    <span class="error" id="bericht_error"></span>
+                    <textarea id="bericht" placeholder="Typ hier je vraag"></textarea>
+                </p>
+                <button type="button" value="verstuur" id="knop_verstuur" onclick="verstuur()">Verstuur</button>
+            </form>
+        </div>
+        <div class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.247340835897!2d4.895378716354343!3d52.3659349553871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609956fbafdf3%3A0xa7a687bfe92b16be!2sRembrandtplein%20101%2C%201017%20CV%20Amsterdam%2C%20Nederland!5e0!3m2!1snl!2sbe!4v1608200472672!5m2!1snl!2sbe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
     <footer>
         <div class="footerlinks">
             <ul>
@@ -71,43 +116,32 @@
                 <li><a href="boek-ons.html">Boek nu</a></li>
             </ul>
         </div>
-
         <div class="footercenter">
-          <!--Plaats waar de nieuwsbrief inschrijving komt-->
-         
+            <!--Plaats waar de nieuwsbrief inschrijving komt-->
             <form action="https://google.us7.list-manage.com/subscribe/post?u=d0922d1dcbd58345ff27591c9&amp;id=d7804794e8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div id="mailchimp">
-                <label for="mce-EMAIL">Nieuwsbrief inschrijving</label> <br>
-                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Typ hier je emailadres" required>
-                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d0922d1dcbd58345ff27591c9_d7804794e8" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" value="Versturen" name="subscribe" id="mc-embedded-subscribe" class="buttonmailchimp"></div>
+                    <label for="mce-EMAIL">Nieuwsbrief inschrijving</label> <br>
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Typ hier je emailadres" required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d0922d1dcbd58345ff27591c9_d7804794e8" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="Versturen" name="subscribe" id="mc-embedded-subscribe" class="buttonmailchimp"></div>
                 </div>
             </form>
-           
-            
-
         </div>
-
         <div class="footerrechts">
-
             <ul>
-                 <li><i class="fas fa-map-marked-alt"> </i> Rembrandtplein 101</li>
+                <li><i class="fas fa-map-marked-alt"> </i> Rembrandtplein 101</li>
                 <li><i class="fas fa-address-card"></i> Amsterdam 1071 AN NL</li>
                 <li><i class="fas fa-phone"> </i> +31 12341234</li>
                 <li><i class="far fa-envelope-open"> </i> Madurodam@info.com</li>
             </ul>
         </div>
-
         <div class="copyrightbalk">
             <p>&copy;1970-2020 Madurodam </p>
         </div>
     </footer>
-
-
     <script src="https://kit.fontawesome.com/03ded771a1.js" crossorigin="anonymous"></script>
     <script src="javascript/contform.js"></script>
-
 </body>
 
 </html>
