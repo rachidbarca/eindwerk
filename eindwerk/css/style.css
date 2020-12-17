@@ -462,7 +462,11 @@ i {
     ' introtekst introfotos '
     ;
 }
-
+.bovengrid h1{
+    font-family: cinzel;
+    text-align: center;
+    margin-top: -50px;
+}
 .introfotos{
     display: grid;
     grid-template-columns: auto ;
@@ -485,6 +489,8 @@ i {
  }
    .introtekst p{
        justify-self: end;
+       font-family: open-sans;
+       
    }  
 
 .fotolb{
@@ -521,9 +527,12 @@ i {
     opacity: 0.5;
 }
 
-.overonstekst{
+.overonstekst p{
     width: 1000px;
     margin: auto;
+    padding: 40px;
+    font-family: open-sans;
+    font-size: 20px;
    
 }
 .overonsfotos{
