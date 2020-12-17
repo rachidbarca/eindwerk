@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slidejumb.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Madurodam</h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="diensten.html">Diensten</a></li>
+                <li><a href="restaurant.html">Restaurant</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="prijzen.html">Prijzen</a></li>
+                <li><a href="formcontact.html">Contact</a></li>
+                <li><a href="form.html">Boek nu</a></li>
+            </ul>
+        </div>
+       
+    </header>
+    <div class="jumbotron">
+    </div>
+
+
+<form>
+    <span class="correct" id="correctomundo"></span>
+    <p>
+        <input type="text" id="voornaam" placeholder="Voornaam">
+        <span class="error" id="voornaam_error"></span>
+        <input type="text" id="achternaam" placeholder="Achternaam">
+        <span class="error" id="achternaam_error"> </span>
+    </p>
+    <p>
+        <input type="text" id="email" placeholder="e-mail">
+        <span class="error" id="mail_error"></span>
+    </p>
+    <p>
+        <input type="text" id="onderwerp" placeholder="Onderwerp">
+        <span class="error" id="onderwerp_error"></span>
+    </p>
+    <p>
+        <textarea id="bericht" placeholder="Typ hier je vraag"></textarea>
+        <span class="error" id="bericht_error"></span>
+    </p>
+    <button type="button" value="verstuur" id="knop_verstuur" onclick="verstuur()">Verstuur</button>
+</form>
+
+
+
+
+    <footer>
+        <div class="footerlinks">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="diensten.html">Diensten</a></li>
+                <li><a href="restaurant.html">Restaurant</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="prijzen.html">Prijzen</a></li>
+                <li><a href="formcontact.html">Contact</a></li>
+                <li><a href="form.html">Boek nu</a></li>
+            </ul>
+        </div>
+
+        <div class="footercenter">
+          <!--Plaats waar de nieuwsbrief inschrijving komt-->
+         
+            <form action="https://google.us7.list-manage.com/subscribe/post?u=d0922d1dcbd58345ff27591c9&amp;id=d7804794e8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mailchimp">
+                <label for="mce-EMAIL">Nieuwsbrief inschrijving</label> <br>
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Typ hier je emailadres" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d0922d1dcbd58345ff27591c9_d7804794e8" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Versturen" name="subscribe" id="mc-embedded-subscribe" class="buttonmailchimp"></div>
+                </div>
+            </form>
+           
+            
+
+        </div>
+
+        <div class="footerrechts">
+
+            <ul>
+                 <li><i class="fas fa-map-marked-alt"> </i> Rembrandtplein 101</li>
+                <li><i class="fas fa-address-card"></i> Amsterdam 1071 AN NL</li>
+                <li><i class="fas fa-phone"> </i> +31 12341234</li>
+                <li><i class="far fa-envelope-open"> </i> Madurodam@info.com</li>
+            </ul>
+        </div>
+
+        <div class="copyrightbalk">
+            <p>&copy;1970-2020 Madurodam </p>
+        </div>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/03ded771a1.js" crossorigin="anonymous"></script>
+    <script src="javascript/contform.js"></script>
+
+</body>
+
+</html>

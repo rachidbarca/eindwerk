@@ -30,8 +30,9 @@ header {
     gap: 10px;
     padding: 40px 0px;
 }
+
 ul h2 {
-    text-align:left;
+    text-align: left;
 }
 
 .nav ul li a {
@@ -278,12 +279,7 @@ footer {
 }
 
 #mailchimp input {
-    background-color: rgba(0, 0, 0, 0.1);
-    color: #c7a464;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid #c7a464;
-    text-align: center;
+ width:200px;
 }
 
 .buttonmailchimp {
@@ -339,10 +335,10 @@ i {
 .kamertekst {
     display: grid;
     grid-area: kamertekst;
-    width:750px;
+    width: 750px;
     margin-left: auto;
     margin-right: auto;
-    margin-top:-6%;
+    margin-top: -6%;
     margin-bottom: 2%;
 
 
@@ -351,11 +347,11 @@ i {
 
 .kamertekst p {
     align-self: start;
-    border:2px solid black;
+    border: 2px solid black;
     width: 80%;
     margin: auto;
     padding: 10px;
-    color:#000;
+    color: #000;
 }
 
 
@@ -365,7 +361,7 @@ i {
     height: 400px;
     list-style: "~ ";
     margin: auto;
-    margin-top:10%;
+    margin-top: 10%;
     color: #FFFFFF;
     background: url(../images/footer-bg.png);
     max-width: 300px;
@@ -382,25 +378,28 @@ i {
     padding: 5px;
     margin-bottom: 10px;
     width: 100px;
-    background-color:rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     border: 1px solid #c7a464;
-    color:#FFF;
-    margin-left:-15%;
-    margin-top:6%;
-    margin-right:auto;
-    cursor:pointer;
+    color: #FFF;
+    margin-left: -15%;
+    margin-top: 6%;
+    margin-right: auto;
+    cursor: pointer;
 
 }
+
 .kamerinfo a {
 
-    text-decoration:none;
+    text-decoration: none;
 }
+
 .kamerinfo button:focus {
-    outline:none;
+    outline: none;
 }
+
 .kamerinfo button:hover {
-    background-color:rgba(255,255,255,1);
-    color:#292929;
+    background-color: rgba(255, 255, 255, 1);
+    color: #292929;
 }
 
 .subnav {
@@ -434,7 +433,6 @@ i {
 
 }
 
-/* Voeg dit onderaan de css toe :); */
 
 ::selection {
     background-color: #000000;
@@ -443,82 +441,90 @@ i {
 
 }
 
-
+.nostyle {
+    list-style-type:none;
+}
 
 /*Home pagina begint hier*/
 
 
-.content{
+.content {
     display: grid;
     grid-template-columns: auto;
     grid-auto-rows: auto;
 }
 
-.bovengrid{
+.bovengrid {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr ;
-    grid-template-areas: 
-    ' introtekst introfotos '
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        ' introtekst introfotos '
     ;
 }
-.bovengrid h1{
+
+.bovengrid h1 {
     font-family: cinzel;
     text-align: center;
     margin-top: -50px;
 }
-.introfotos{
+
+.introfotos {
     display: grid;
-    grid-template-columns: auto ;
+    grid-template-columns: auto;
     grid-template-rows: 1fr 1fr;
     gap: 10px;
-    grid-template-areas: 
-    ' fotolb fotorb'
-    ' fotolo fotoro'
+    grid-template-areas:
+        ' fotolb fotorb'
+        ' fotolo fotoro'
     ;
     grid-area: introfotos;
 
 }
- .introtekst{
-     grid-area: introtekst;
-     padding: 2rem;
-     font-size: 1.5rem;
-     display: grid;
-     justify-self: end;
-     
- }
-   .introtekst p{
-       justify-self: end;
-       font-family: open-sans;
-       
-   }  
 
-.fotolb{
+.introtekst {
+    grid-area: introtekst;
+    padding: 2rem;
+    font-size: 1.5rem;
+    display: grid;
+    justify-self: end;
+
+}
+
+.introtekst p {
+    justify-self: end;
+    font-family: open-sans;
+
+}
+
+.fotolb {
     grid-area: fotolb;
     height: 150px;
     width: 250px;
-    justify-self:end;
+    justify-self: end;
 }
-.fotorb{
+
+.fotorb {
     grid-area: fotorb;
     height: 150px;
     width: 250px;
-    
+
 }
 
-.fotolo{
+.fotolo {
     grid-area: fotolo;
     height: 150px;
     width: 250px;
     justify-self: end;
 }
-.fotoro{
+
+.fotoro {
     grid-area: fotoro;
     height: 150px;
     width: 250px;
 }
 
-.scheider{
+.scheider {
     border-top: 3px solid;
     width: 70%;
     margin: auto;
@@ -527,23 +533,100 @@ i {
     opacity: 0.5;
 }
 
-.overonstekst p{
+.overonstekst p {
     width: 1000px;
     margin: auto;
     padding: 40px;
     font-family: open-sans;
     font-size: 20px;
-   
+
 }
-.overonsfotos{
+
+.overonsfotos {
     display: grid;
-    grid-template-columns:1fr 1fr;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     align-content: space-evenly;
     gap: 50px;
-    
+
 }
-.imgleft{
+
+.imgleft {
     justify-self: end;
 }
+
 /*Home pagina eindigt hier*/
+
+
+/*Forms  */
+input {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #c7a464;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #c7a464;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+textarea {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #c7a464;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #c7a464;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+}
+
+select {
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid #c7a464;
+    color: #FFF;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: #292929;
+}
+
+textarea {
+    height: 200px;
+    width: 400px;
+}
+
+#onderwerp {
+    width: 400px;
+}
+
+::placeholder {
+    color: rgba(255,255,255,0.6);
+    text-align: left;
+    font-weight: bold;
+}
+.prijsknop {
+    padding: 5px;
+    line-height:40px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid #c7a464;
+    color: #FFF;
+    cursor: pointer;
+}
+.prijsknop:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: #292929;
+}
